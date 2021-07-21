@@ -1,0 +1,29 @@
+{
+  "name": "base-whatever",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A package for encoding and decoding integers and strings using arbitrary bases and digits. ",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "node dist/test.js",
+    "build": "tsc"
+  },
+  "keywords": [
+    "encoding",
+    "decoding",
+    "base64",
+    "base62",
+    "hexadecimal",
+    "octal",
+    "binary"
+  ],
+  "author": "Johan Grundberg",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/node": "^16.3.3",
+    "typescript": "^4.3.5"
+  }
+}
