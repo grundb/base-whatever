@@ -25,6 +25,7 @@ const testCases: TestCase[] = [
   { digits: systems.DECIMAL, n: 6, s: "6"},
 ];
 
+// General functionality, no leading zeroes
 testCases.forEach(tc => {
   const converter = new Converter(tc.digits);
   const s = converter.encode(tc.n);
