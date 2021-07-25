@@ -46,12 +46,12 @@ console.log(converter.decode("110")); // 12
 
 // Unary base
 converter = new Converter(systems.UNARY_VERTICAL_BAR);
-console.log(converter.encode(16)); // ||||||||||||||||
+console.log(converter.encode(16)); // "||||||||||||||||"
 console.log(converter.decode("||||||||||||||||")); // 16
 console.log(converter.decode("")); // 0
 
 // Using util functions
-console.log(encode(systems.BINARY, 32)) // 100000
+console.log(encode(systems.BINARY, 32)) // "100000"
 console.log(decode(systems.BINARY, "100000")) // 32
 ```
 
