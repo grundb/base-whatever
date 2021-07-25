@@ -1,6 +1,6 @@
 {
   "name": "base-whatever",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A package for encoding and decoding integers and strings using arbitrary bases and digits. ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
