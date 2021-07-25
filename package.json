@@ -4,14 +4,21 @@
   "description": "A package for encoding and decoding integers and strings using arbitrary bases and digits. ",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": "github:grundb/base-whatever",
+  "homepage": "https://github.com/grundb/base-whatever",
+  "bugs": "https://github.com/grundb/base-whatever/issues",
   "scripts": {
+    "build": "tsc",
     "pretest": "npm run build",
     "test": "node dist/test.js",
-    "build": "tsc"
+    "prepublishOnly": "npm run test"
   },
   "keywords": [
     "encoding",
     "decoding",
+    "base",
+    "radix",
+    "integers",
     "base64",
     "base62",
     "hexadecimal",
