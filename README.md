@@ -1,7 +1,7 @@
 # base-whatever
-An npm package for encoding and decoding integers in arbitrary number systems. A number system is given as a string of unique UTF-8 characters, which are considered digits in arising order. For example, the decimal system can be specified as `"0123456789"`, and the upper-case hexadecimal as `"0123456789ABCDE"`. 
+An npm package for encoding and decoding integers in arbitrary number systems. A number system is given as a string of unique UTF-8 characters, which are considered digits in arising order. For example, the decimal system can be specified as `"0123456789"`, and the upper-case hexadecimal as `"0123456789ABCDEF"`. 
 
-The base used for conversions between strings and numbers is taken as the length of the string of digits. Any base &ge; 1 is supported. The first character of the string of digits is considered to be the zero symbol, unless the base is 1 in which case there is no zero symbol but zero is represented as the empty string. This package only operates on integers within the range of integers safely representable by the JS `number` type, i.e. [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`].
+The base used for conversions between strings and numbers is taken as the length of the string of digits. Any base &ge; 1 is supported. The first character of the string of digits is considered to be the zero symbol, unless the base is 1 in which case there is no zero symbol but zero is represented as the empty string. This package only operates on integers within the range of integers safely representable by the JS `number` type, i.e. [`Number.MIN_SAFE_INTEGER`, `Number.MAX_SAFE_INTEGER`]. 
 
 Since all UTF-8 characters are supported, any symbol can be used to represent any digit. For example, one can encode and decode numbers in binary using the thumbs up/down emojis, using the number system `"👎👍"`.
 
