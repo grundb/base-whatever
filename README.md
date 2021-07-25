@@ -7,7 +7,7 @@ Since all UTF-8 characters are supported, any symbol can be used to represent an
 
 One thing this package can be used for is generating all possible strings from a given alphabet, starting from the shortest ones and ensuring all strings generated are unique. This can be achieved by selecting a suitable number system and repeatedly encoding increasing integers starting from 0. This could be useful for generating short, human-readable identifiters with arbitrary UTF-8 alphabets. Specifically, the `encode` method of the `Converter` class can do this.
 
-A mathematical explanation of the previous paragraph is that the package provides an injective (bijective if no signs or leading zeroes are used in strings) function from the non-negative integers to the strings over an arbitrary alphabet such that the length of the strings scale logarithmically with the numbers encoded (unless a unary system is used, in which case the lengths of the strings scale linearly with the size of the numbers encoded).
+A mathematical explanation of the previous paragraph is that the package provides an injective (bijective if no signs or leading zeroes are used in strings) function from the non-negative integers to the strings over an arbitrary alphabet such that the lengths of the strings scale logarithmically with the numbers encoded (unless a unary system is used, in which case the lengths of the strings scale linearly with the size of the numbers encoded).
 
 ## Installing locally
 `npm i base-whatever` or `yarn add base-whatever`
